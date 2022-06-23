@@ -1,0 +1,24 @@
+ALGORITHM algorithm_name
+VAR
+    htab: hgfd
+    set1: array of INTEGER[n1]
+    set2: array of INTEGER[n2]
+BEGIN
+    FOR i=0 to n1-1  DO
+    htab inset(set[i],1)
+        FOR j=0 to n2-1 DO
+            cumt:=1;
+            IF (htab.lookup(set2[i]=trur)) THEN
+                cumt:=cumt+1;
+            END_IF
+            IF (cumt=1) THEN
+                sum:=sum+set1[i];
+            END_IF
+        END_FOR
+        FOR j=0 to n2-1 DO
+            htab,lookup(set2[j]=folds) THEN
+            sum=sum+set2[j]
+        END_FOR
+    END_FOR
+    WHILE (sum)
+END

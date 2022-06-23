@@ -1,0 +1,35 @@
+ALGORITHM majed
+VAR
+    set1: array of INTEGER[n1]
+    set2: array of INTEGER[n2]
+BEGIN
+    READ(n1)
+    READ(n2)
+    FOR i=0 to n1-1 DO
+    READ set1[i]
+    END FOR
+    FOR i=0 to n2-1 DO
+    READ set2[i]
+    END FOR
+    
+    FOR i=0 to (n1.lengh)-1 DO
+    FOR j=0 to (n2.lengh)-1 DO
+    IF (set1[i]<>set2[j]) THEN
+        temp:=set1;
+    END_IF
+    END FOR
+    sum=sum+temp
+    END FOR
+
+
+    FOR i=0 to (n2.lengh)-1 DO
+    FOR j=0 to (n1.lengh)-1 DO 
+    IF (set1[i]<>set2[j]) THEN
+        temp:=set2;
+    END_IF
+    END FOR
+    sum=sum+temp
+    END FOR
+    READ=sum
+    
+END
